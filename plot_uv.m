@@ -6,9 +6,9 @@ function [ur vr]=plot_uv(url, timestamp, lyr, uname, vname, scl)
 % This tool requires NCTOOLBOX toolbox to work properly. See
 % https://github.com/nctoolbox/nctoolbox
 % 
-% url: address to your netcdf file. Can be local.
-% timestamp: time stamp
-% lyr: layer
+% url: address to your netcdf file. Can be local or asn ncml.
+% timestamp: time stamp of the snapshot
+% lyr: layer 
 % uname: name of the u variable. Default is u.
 % vname: name of the v variable. Default is v.
 % scl: alue to use to scale the vector plot. Default is 1.
