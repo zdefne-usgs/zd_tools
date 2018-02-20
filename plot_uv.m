@@ -13,7 +13,7 @@ function [ur vr]=plot_uv(url, timestamp, lyr, uname, vname, scl)
 % vname: name of the v variable. Default is v.
 % scl: alue to use to scale the vector plot. Default is 1.
 % 
-% October 2015
+% October 2016
 % Zafer Defne
 
 if nargin < 1
