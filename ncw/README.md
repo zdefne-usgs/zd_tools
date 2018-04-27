@@ -37,8 +37,7 @@
     s=ncw(nc, '4dm', 'salt', ti1, 3, eta1:eta2, xi1:xi2);
   Slice or vertical profile. '4dp' instead of '4d', slice at xi1:
     s=ncw(nc, '4dp', 'salt', ti1, lyr1:lyr2, eta1:eta2, xi1);
- ```
- ```
+
   2014, October
   Zafer Defne
  ```
