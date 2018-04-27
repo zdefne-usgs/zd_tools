@@ -231,7 +231,8 @@ switch ptype
             s=squeeze(nc{vname}(tind, eta, xi));
         end
         figure
-        set(gcf, 'position', [ 580 750 1100 250])
+        plotwide
+%         set(gcf, 'position', [ 580 750 1100 250])
         t=t(tind);
         if length(tind)>1
             plot(t, s, '.-')
