@@ -43,8 +43,7 @@
  ```
  ```
   Edited to include profile plot option with '4dp'
- 
- s=ncw(nc, '4dp', 'salt', ti1, lyr1:lyr2, eta1:eta2, xi1);
+    s=ncw(nc, '4dp', 'salt', ti1, lyr1:lyr2, eta1:eta2, xi1);
  
   2016, December
   Zafer Defne
