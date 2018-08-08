@@ -65,7 +65,7 @@ a=nc{'angle'}(2:end-1,2:end-1);
 ur=urho.*cos(a)-vrho.*sin(a);
 vr=vrho.*cos(a)+urho.*sin(a);
 
-vel=abs(ur+sqrt(-1)*vr);
+vel=double(abs(ur+sqrt(-1)*vr));
 pcolor(lon(2:end-1,2:end-1),lat(2:end-1,2:end-1),vel);
 shading flat
 colorbar
