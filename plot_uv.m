@@ -35,8 +35,29 @@ m=nc{'mask_rho'}(:);
 lat=nc{'lat_rho'}(:);
 lat(m==0)=nan;
 lon(m==0)=nan;
-t=nc.time('ocean_time');
+time1=[];
+time2=[];
+try 
+    time1=nc.time('ocean_time');
+catch err
+    disp(['ocean_time : ' err.message])
+end
+try 
+    time2=nc.time('time');
+catch err
+    disp(['time : ' err.message])
+end
 
+if length(time1) >= length(time2)
+    t=time1;
+elseif length(time1) < length(time2)
+    t=time2;
+else
+    disp('Problem with locating time dimension')
+end
+
+metau=nc{uname};
+unts=metau.attribute('units');
 ti=near(t,timestamp);
 tie=ti;
 if lyr==-1

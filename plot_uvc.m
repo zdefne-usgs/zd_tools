@@ -86,7 +86,6 @@ vr=vrho.*cos(a)+urho.*sin(a);
 
 vel=double(abs(ur+sqrt(-1)*vr));
 
-figure
 pcolor(lon(2:end-1,2:end-1),lat(2:end-1,2:end-1),vel);
 shading flat
 colorbar
