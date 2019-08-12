@@ -2,7 +2,7 @@ function [ur, vr]=plot_uvcm(url, timestamp, elev, uname, vname, scl);
 % quiver plot for vector fields in ROMS and COAWST. Now with pcolor
 % backgrpund map!
 %
-% [ur vr]=plot_uvc(url, timestamp, elev, uname, vname, scl)
+% [ur vr]=PLOT_UVCM(url, timestamp, elev, uname, vname, scl)
 % 
 % This tool requires NCTOOLBOX toolbox to work properly. See
 % https://github.com/nctoolbox/nctoolbox
@@ -12,7 +12,7 @@ function [ur, vr]=plot_uvcm(url, timestamp, elev, uname, vname, scl);
 % elev: elev in meters, z-axis positive up from the still water level (negative of depth h in ROMS output)
 % uname: name of the u variable. Default is u.
 % vname: name of the v variable. Default is v.
-% scl: alue to use to scale the vector plot. Default is 1.
+% scl: value to use to scale the vector plot. Default is 1.
 % 
 % October 2018
 % Zafer Defne

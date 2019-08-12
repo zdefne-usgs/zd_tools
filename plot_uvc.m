@@ -12,7 +12,7 @@ function [ur vr]=plot_uvc(url, timestamp, lyr, uname, vname, scl)
 % lyr: layer 
 % uname: name of the u variable. Default is u.
 % vname: name of the v variable. Default is v.
-% scl: alue to use to scale the vector plot. Default is 1.
+% scl: value to use to scale the vector plot. Default is 1.
 % 
 % October 2018
 % Zafer Defne
